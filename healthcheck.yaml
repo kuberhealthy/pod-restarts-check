@@ -42,7 +42,7 @@ spec:
       serviceAccountName: pod-restarts-check
       containers:
         - name: pod-restarts
-          image: kuberhealthy/pod-restarts-check:sha-<short-sha>
+          image: ghcr.io/kuberhealthy/pod-restarts-check:v0.1.0
           imagePullPolicy: IfNotPresent
           env:
             - name: POD_NAMESPACE
